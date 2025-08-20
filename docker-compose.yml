@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  price_fetcher:
+    build: ./price_fetcher
+    ports:
+      - "5001:5001"
+
+  lp_simulator:
+    build: ./lp_simulator
+    ports:
+      - "5002:5002"
